@@ -1,0 +1,17 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Peter?
+patient: Oh, hi there! Actually, I’m not Peter. My name’s Aisha Kone. I was just hoping to find out your opening hours and if there’s parking near the clinic.
+agent: Please give me your full name and date of birth.
+patient: Sure, my full name is Aisha Kone. My date of birth is March 12, 1985.
+agent: Please spell your first and last name for me and confirm your date of birth.
+patient: Of course. My first name is spelled A-I-S-H-A. My last name is K-O-N-E. And my date of birth is March 12, 1985.
+agent: Do you want to use a phone number to look up your record?
+patient: Actually, I’m not looking to pull up a record. I just need to know your opening hours and if there's parking nearby.
+agent: The clinic is open Monday through Friday. Hours are Monday, Tuesday, and Thursday from 9 a.m. to 4 p.m., Wednesday from 12 p.m. to 7 p.m., Friday from 9 a.m. to 12 p.m. Yes, there is free patient parking in the surface lot in front of the building.
+patient: Thanks so much for that info. That’s exactly what I needed. Appreciate it!
+agent: You're welcome.
+patient: Great, thanks again. Have a good day!
+agent: You too.
+patient: Take care! Bye now.
+agent: Goodbye.
+patient: Goodbye! Take care.

@@ -1,0 +1,22 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of PrettyGoodAI. Am I speaking with Peter?
+patient: No, this is Linda Phiri. I'm calling to book an appointment.
+agent: Please tell me your date of birth.
+patient: Sure, my date of birth is March 12, 1985.
+agent: Please tell me your full name, first and last, and your date of birth.
+patient: My full name is Linda Phiri, and my date of birth is March 12, 1985.
+agent: Please spell your first and last name for me and confirm your date of birth.
+patient: Sure. My first name is Linda, L-I-N-D-A. My last name is Phiri, P-H-I-R-I. And my date of birth is March 12, 1985.
+agent: Do you want to use a phone number to look up your record?
+patient: Yes, we can use my phone number. It’s 555-237-9146.
+agent: I have your number as 555-237-9146 and your date of birth as March 12, 1985. Please confirm those are correct.
+patient: Yes, that’s correct. Thanks for confirming.
+agent: I can't look this directly right now. I'll connect you with our clinic support team and they'll follow up as soon as they can.
+patient: I understand, but I really need to book an appointment for this Sunday at 10 a.m. That’s the only time that works for me. Could you please let them know it’s urgent?
+agent: I'm unable to save that request right now, but I can connect you to our clinic support team. Please stay on the line.
+patient: I understand, and I’ll hold on. But please do let them know that Sunday at 10 a.m. is the only time I can come in. Thank you.
+agent: Connecting you to a representative.
+agent: Please wait.
+patient: All right, I’ll wait.
+agent: Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Oh, I’m sorry, I must have gotten redirected. Could you assist me with booking my Sunday 10 a.m. appointment, please?

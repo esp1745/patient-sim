@@ -1,0 +1,16 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Peter?
+patient: Hi, no, this is Kofi Asante. I’m actually calling to get the results of a blood test I had last week. Could you help me with that?
+agent: Please tell me your date of birth.
+agent: Please tell me your date of birth.
+patient: Sure. It's March 15, 1982.
+agent: I have your name as Kofi Asante and your date of birth as March 15, 1982. Is that correct?
+patient: Yes, that's correct.
+agent: I have your number as 318-575-6759. Is that the phone number on file?
+patient: Actually, my number is different. It’s 310-575-6759.
+patient: Yes, that’s all correct.
+agent: I have your number as 310-575-6759 and your date of birth as March 15th, 1982. Is that all correct?
+agent: Connecting you to a representative. Please wait.
+patient: Thank you. I’ll hold.
+agent: Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Oh, wait, I still need my blood test results. Could you assist me with that, please?

@@ -1,0 +1,13 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. How is speaking with Peter.
+patient: No, this is Tom Reilly. I'm trying to get the soonest appointment this week.
+agent: Please tell me your date of birth.
+patient: Sure, it's March 12, 1982.
+agent: Please spell your first and last name for me and confirm your date of birth.
+patient: Yeah, first name: T-O-M, last name: R-E-I-L-L-Y. And the date of birth is March 12, 1982.
+agent: Do you want to use a phone number on file instead? If so, submit the number you have on the account.
+patient: I don't have that handy right now. Can we just go ahead with the appointment scheduling? I really need the soonest available this week.
+agent: Connecting you to a representative. Please wait.
+patient: Alright, I'm waiting.
+agent: Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Wait, hold on, I'm still here. I need that appointment this week—what's the next step?

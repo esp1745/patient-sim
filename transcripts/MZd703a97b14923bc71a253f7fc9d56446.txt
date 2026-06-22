@@ -1,0 +1,10 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+patient: Hi, I’m calling to book an appointment with a doctor. I've had a cough for about two weeks now,
+agent: Hi, how can I help you today?
+patient: Hey there, thanks for taking my call. I’ve had this cough for two weeks, and I’d really like to see a doctor. I’m hoping to get the earliest morning appointment you’ve got available.
+agent: I'll check what's available. I can help with that.
+agent: I have openings this week and early next week. What day works best for you, or is any morning fine?
+patient: Any morning is fine for me, but I’d love the earliest slot you have, maybe this week if possible.
+agent: I'll check the earliest morning opening for you.
+agent: Connecting you to a representative. Please wait. Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Oh, that’s unexpected. It seems like the call got disconnected or redirected. Let’s try again. I still need to book that doctor’s appointment for my cough. Could you help check the next earliest morning appointment available?

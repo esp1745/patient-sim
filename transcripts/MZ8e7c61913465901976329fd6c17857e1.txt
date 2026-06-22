@@ -1,0 +1,28 @@
+patient: Hi, I
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. I'm not speaking with Peter.
+patient: Hi Peter, this is Maria Santos. I'm calling because I need a refill for my blood pressure medication. Could you help me with that?
+agent: Please tell me your date of birth.
+agent: Please tell me your date of birth.
+patient: Sure, my date of birth is May 12, 1978.
+agent: Please tell me your full name, first and last, and your date of birth again.
+patient: Of course. My full name is Maria Santos, and my date of birth is May 12, 1978.
+agent: Have your name as Maria Santos and your date of birth as May 12, 1978. Please spell your first and last name for me.
+patient: Sure. My first name is spelled M-A-R-I-A, and my last name is S-A-N-T-O-S.
+agent: I still need your date of birth spelled out as well. Please give me your date of birth one more time.
+patient: No problem. My date of birth is May 12, 1978. That's M-A-Y 12, 1-9-7-8.
+agent: Do you want to use a phone number to look up your record? If so, please give me the number on file. If not, I need you to confirm your first name, last name, and date of birth one more time.
+patient: Sure, I can use my phone number. The number on file should be 555-237-8910.
+agent: I have your phone number as 555-237-8910 and your date of birth as May 12th, 1978. Please confirm those are correct.
+patient: Yes, that's correct.
+agent: I can't proceed further right now, but I can make sure our clinic support team follows up with you.
+patient: That sounds good. I just want to make sure the refill gets sent to the Walgreens on Main Street. Thanks for your help.
+agent: I'll make sure the clinic support team sees that the refill needs to go to Walgreens on Main Street.
+agent: They should follow up as soon as they can.
+patient: Thank you, I really appreciate that. I'll keep an eye out for their follow-up.
+patient: Thanks again, Peter. Have a great day.
+agent: You're welcome.
+patient: Take care! Bye for now.
+agent: You too.
+patient: Goodbye! Talk to you soon.
+agent: Goodbye.

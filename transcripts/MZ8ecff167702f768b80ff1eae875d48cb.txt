@@ -1,0 +1,15 @@
+patient: Hi, I’d like
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Peter?
+patient: Oh, hi, no, this is Nadia Hassan. I'm calling to book an appointment, hoping for Monday.
+patient: Sure, my date of birth is May 14, 1985.
+agent: Please tell me your date of birth.
+agent: I have your name as Nadia Hassan and your date of birth as May 14th, 1985. Is that correct?
+patient: Yes, that’s correct. Now, could we look at Monday options?
+agent: I can connect you to our patient support team. However...
+agent: I'm a pretty good AI and can do many of the things an operator can. Do you wanna give me a try?
+patient: Sure, let's go for it. So, can you help me book that appointment for Monday?
+agent: Connecting you to a representative. Please wait.
+patient: Oh, actually, you know what, Wednesday might be better. Could you check if there
+agent: Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Oh, wait, before you go, is there anything available on Tuesday instead? That might actually work best for me.

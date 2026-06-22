@@ -1,0 +1,15 @@
+agent: This call may be recorded for quality and training purposes. Para español, oprima el dos.
+agent: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Peter?
+patient: No, this is Sam Carter. I’m just calling about a prescription refill.
+agent: Please tell me your date of birth.
+patient: Sure, it’s May 12th, 1981.
+agent: I have your name as Sam Carter and your date of birth as May 12th, 1981. Is that correct?
+patient: Yes, that’s correct.
+agent: Do you want to use the phone number on file to look up your record?
+patient: Yeah, that works for me.
+agent: Please tell me the phone number you have on file.
+patient: I’m pretty sure it’s 555-234-7890.
+patient: Yes, that’s correct.
+agent: I have your phone number as 555-234-7890 and your date of birth as May 12th, 1981. Is that correct?
+agent: Connecting you to a representative. Please wait. Hello, you've reached the Pretty Good AI test line. Goodbye.
+patient: Wait, I still need help with my prescription refill. Can we sort that out now?

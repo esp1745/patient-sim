@@ -1,0 +1,101 @@
+# patient-sim
+
+An automated voice bot that calls a clinic's AI phone agent, role-plays realistic
+patients, and records the conversations to surface bugs. Built for the Pretty Good AI
+engineering challenge.
+
+The caller is itself an AI: each call connects the clinic agent to an OpenAI Realtime
+model told to behave like a specific patient — reschedule an appointment, refill a
+prescription, push for a weekend slot, ask about insurance, and so on. Every call is
+recorded and transcribed, and the transcripts are reviewed for agent failures. Findings
+are in bugs.md file.
+
+## Architecture
+
+The system is a thin audio bridge. A small FastAPI server sits between two
+websockets: one to Twilio (the live phone call) and one to OpenAI's Realtime API (the
+patient's brain). When `caller.py` places an outbound call, Twilio dials the clinic line
+and — once connected — fetches TwiML from `/twiml` that opens a Media Stream back to the
+server's `/media` endpoint. From there the server just forwards audio both ways: the
+clinic agent's speech goes to OpenAI, and OpenAI's spoken reply goes back to Twilio. Both
+ends speak G.711 μ-law at 8 kHz, so audio is relayed without any transcoding, which keeps
+latency low enough for natural turn-taking.
+
+Two choices drive the conversational quality. First, a **speech-to-speech** model
+(OpenAI Realtime) rather than a separate speech-to-text → LLM → text-to-speech pipeline:
+one websocket instead of three hops means lower latency and built-in interruption
+handling, which is what makes the calls sound human. Second, the patient **does not speak
+first** — it waits for the clinic to greet, mirroring a real call — while semantic
+voice-activity detection and `interrupt_response` handle barge-in. Each patient is just a
+system prompt in `scenarios.py`, so adding a test case is a few lines, and the scenario
+id is passed through the call as a Twilio stream parameter.
+
+## Setup
+
+Requires Python 3.9+, an upgraded Twilio account with a voice-capable number, an OpenAI
+API key with Realtime access, and a free ngrok account.
+
+```bash
+git clone <your-repo-url>
+cd patient-sim
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env        # then fill in your keys
+```
+
+Values to fill in `.env`:
+
+| Variable | What it is |
+| --- | --- |
+| `OPENAI_API_KEY` | OpenAI key with Realtime access |
+| `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN` | From the Twilio console |
+| `TWILIO_FROM_NUMBER` | Your Twilio voice number (E.164) |
+| `TARGET_NUMBER` | The clinic agent line (E.164) |
+| `PUBLIC_URL` | Your current ngrok https URL, no trailing slash |
+
+## Running
+
+Three terminals, all with the venv active:
+
+```bash
+# 1. the bridge server
+uvicorn patient_sim.server:app --port 5050 --reload
+
+# 2. expose it publicly, then paste the https URL into PUBLIC_URL in .env
+ngrok http 5050
+```
+
+```bash
+# 3. place calls
+python -m patient_sim.caller reschedule      # a single scenario
+python -m patient_sim.run                     # every scenario, back to back
+python -m patient_sim.run weekend refill      # a chosen subset
+```
+
+Transcripts are written to `transcripts/` automatically as each call ends. Afterwards,
+pull the audio down from Twilio:
+
+```bash
+python -m patient_sim.recordings              # saves mp3s into recordings/
+```
+
+## Project layout
+
+```
+patient_sim/
+  server.py      bridge between Twilio and OpenAI Realtime
+  scenarios.py   patient personas (each is a system prompt)
+  caller.py      places one outbound call
+  run.py         runs a batch of scenarios, one call at a time
+  recordings.py  downloads call recordings as mp3
+transcripts/     both-sides transcript per call
+recordings/      mp3 audio per call
+BUGS.md          findings from reviewing the calls
+```
+
+## Deliverables
+
+- Call recordings — `recordings/*.mp3`
+- Transcripts — `transcripts/*.txt`
+- Bug report — `BUGS.md`
