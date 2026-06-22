@@ -8,7 +8,7 @@ The caller is itself an AI: each call connects the clinic agent to an OpenAI Rea
 model told to behave like a specific patient — reschedule an appointment, refill a
 prescription, push for a weekend slot, ask about insurance, and so on. Every call is
 recorded and transcribed, and the transcripts are reviewed for agent failures. Findings
-are in bugs.md file.
+are in bugs-report.md file.
 
 ## Architecture
 
@@ -44,9 +44,9 @@ pip install -r requirements.txt
 cp .env.example .env        # then fill in your keys
 ```
 
-Values to fill in `.env`:
+ `.env` file:
 
-| Variable | What it is |
+| Variable |
 | --- | --- |
 | `OPENAI_API_KEY` | OpenAI key with Realtime access |
 | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN` | From the Twilio console |
@@ -98,4 +98,4 @@ BUGS.md          findings from reviewing the calls
 
 - Call recordings — `recordings/*.mp3`
 - Transcripts — `transcripts/*.txt`
-- Bug report — `BUGS.md`
+- Bug report — `bugs-report.md`
